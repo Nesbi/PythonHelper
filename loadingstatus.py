@@ -10,7 +10,7 @@ class Loadingstatus:
     def getMilliSeconds(self):
         return int(time.time() * 1000)
 
-    def updateInfiniteLoading(self):
+    def updatePending(self):
         newCall = self.getMilliSeconds()
         if newCall-self.lastCall > 500:
             #switch loading
